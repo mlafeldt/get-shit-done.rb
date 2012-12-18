@@ -1,43 +1,34 @@
-# get-shit-done
+get-shit-done.rb
+================
 
-get-shit-done is an easy to use command line program that blocks websites known to distract us from our work.
+Ruby version of the [original get-shit-done tool.](https://github.com/leftnode/get-shit-done)
 
-After cloning this repository, put it in your $PATH and ensure it is executable.
 
-Execute it as root because it modifies your hosts file and restarts your network daemon.
+Usage
+-----
 
-## To get-shit-done
+To get shit done:
 
-    $ sudo get-shit-done work
+    $ sudo get-shit-done.rb work
 
-## To no longer get-shit-done
+To no longer get shit done:
 
-    $ sudo get-shit-done play
+    $ sudo get-shit-done.rb play
 
-### $siteList
-
-Add or remove elements of this array for sites to block or unblock.
-
-### ~/.get-shit-done.ini
-
-Appends additional sites to block.  Duplicates will be removed, and www is prepended.
+Sites to block are defined in `~/.get-shit-done.ini` using the following format:
 
     sites = foo.com, bar.com, baz.com
 
-### $restartNetworkingCommand
 
-Update this variable with the path to your network daemon along with any parameters needed to restart it.
+License
+-------
 
-### $hostsFile
+Licensed under the terms of the MIT License. See LICENSE file.
 
-Update this variable to point to the location of your hosts file. Make sure it is an absolute path.
 
-# Updates
+Contact
+-------
 
-It's amazing how fast this repository has grown, I had never expected a single link on Hacker News would have caused that! I love it.
-
-I'd really love if anyone wanted to follow some of my other repositories, including [jolt](https://github.com/leftnode/jolt) or [dbmigrator](https://github.com/leftnode/dbmigrator). I think both are promising projects and I know I could use some help on them.
-
-Thanks!
-
--Vic Cherubini
+* Web: <https://github.com/mlafeldt/get-shit-done.rb>
+* Mail: <mathias.lafeldt@gmail.com>
+* Twitter: [@mlafeldt](https://twitter.com/mlafeldt)
